@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codewithdio.fttxphotoandroid1.MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="14"
+        tools:context="com.codewithdio.fttxphotoandroid.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+
+            <Button
+                android:id="@+id/btnSiteName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:alpha="0.85"
+
+                android:elevation="0dp"
+                android:gravity="start"
+                android:onClick="SiteName"
+                android:padding="15dp"
+                android:paddingLeft="5dp"
+                android:text="SiteName :"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnDwgGrid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:alpha="0.85"
+
+                android:gravity="end"
+                android:onClick="DrawingGrid"
+                android:padding="15dp"
+                android:text="DwgGrid :"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnSplitterType"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:alpha=".85"
+
+            android:gravity="start"
+            android:onClick="SplitterType"
+            android:padding="15dp"
+            android:text="SplitterType :"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnSplitterName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:alpha=".85"
+
+            android:gravity="start"
+            android:onClick="SplitterName"
+            android:padding="15dp"
+            android:text="SplitterName :"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnRemark"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:alpha=".85"
+
+            android:gravity="start"
+            android:onClick="Remark"
+            android:padding="15dp"
+            android:text="Remark :"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvLatLng"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="8sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Lat : xxx , Long : xxx" />
+
+
+        <ImageView
+            android:id="@+id/imageView0"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.8"
+
+            android:background="@mipmap/newbackground"
+
+            android:scaleType="centerCrop"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/imgGreenArrow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:id="@+id/imgRedArrow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp" />
+
+            <ImageButton
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_save"
+                android:layout_marginRight="10dp" />
+
+            <ImageButton
+                android:id="@+id/btnCamera"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_camera" />
+
+            <ImageButton
+                android:id="@+id/btnGallery"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_gallery"
+                android:layout_marginRight="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:gravity="center_horizontal"
+        android:text="YYYY/mm/dd HH:mm:ss a"
+        android:textColor="#ff5900"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/imgGreenArrow1"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        app:srcCompat="@mipmap/greenarrow"
+
+        />
+
+    <ImageView
+        android:id="@+id/imgRedArrow1"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+
+        android:layout_marginLeft="47dp"
+        android:layout_weight="1"
+        app:srcCompat="@mipmap/redarrow"
+
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imgGreenArrow1"
+        android:layout_toEndOf="@+id/imgGreenArrow1"
+        android:layout_marginStart="47dp" />
+
+
+</RelativeLayout>
